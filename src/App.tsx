@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   function onClick(type: 'add' | 'subtract') {
     switch (type) {

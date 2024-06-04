@@ -1,0 +1,11 @@
+name: test
+run-name: ${{ github.actor }} is running tests.
+on: [push]
+jobs:
+  run-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm test
