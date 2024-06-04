@@ -31,3 +31,15 @@ npx cypress open
 ```
 
 This should open a new window that allows you to run the tests.
+
+### Run Cypress tests headless
+
+- Follow "Run dev server"
+
+- In another tab, run
+
+```
+npm run test:functional
+```
+
+You should see the output of the tests in terminal
