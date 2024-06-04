@@ -17,5 +17,5 @@ jobs:
         with:
           # project: ./site
           browser: chrome
-          start: npm run dev
+          start: npm run dev:functional
           wait-on: "http://localhost:5173"
