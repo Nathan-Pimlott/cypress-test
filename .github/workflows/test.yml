@@ -9,8 +9,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: npm install
+      - name: Install dependencies
+        with:
+          run: npm install
       - run: npx tsc --noEmit
       - run: npm test
-      - run: npm run dev
-      - run: npm run test:functional
+      - name: Cypress
+        uses: cypress-io/github-action@v3
+        with:
+          # project: ./site
+          browser: chrome
+          dev: npm run dev
+          wait-on: "http://localhost:5173"
