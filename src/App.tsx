@@ -14,6 +14,7 @@ export default function App() {
         break;
     }
   }
+  
   return (
     <>
       <h1>Cypress Test</h1>
