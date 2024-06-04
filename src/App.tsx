@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +13,7 @@ export default function App() {
         break;
     }
   }
-  
+
   return (
     <>
       <h1>Cypress Test</h1>
